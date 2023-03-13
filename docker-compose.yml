@@ -1,7 +1,9 @@
-version: '2'
+version: '3.0'
 
 services:
   control-machine:
     build: .
     command: sleep 3600
+    volumes:
+      - ./files:/etc/files
     
